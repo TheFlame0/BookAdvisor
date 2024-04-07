@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const title = "My First React App";
+// const book = { name: "history", date: "2022-2-2", price: "$15" };
+  const liked = 50;
+
+
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='App'>
+        <Navbar/>
+        <div className="content">
+          <Home/>
+
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }
 
 export default App
+
+
+
+
+
+          {/* <h1> {title} </h1> */}
+          {/* <h2> {book}</h2> */}
+          {/* <p> liked { liked } times</p>
+          <p> {10} </p>
+          <p> { " Hello World"} </p>
+          <p> { [ 1,2,3,4,5,6 ] } </p>
+          <a href='http://www.google.com'> Google Site</a> */}
