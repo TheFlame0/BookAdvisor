@@ -1,19 +1,17 @@
-import Home from './Home';
-import Navbar from './Navbar';
+import Discover from './HomePage-Components/Discover';
+import Navbar from './HomePage-Components/Navbar';
 
 function App() {
-  const title = "My First React App";
+  // const title = "My First React App";
 // const book = { name: "history", date: "2022-2-2", price: "$15" };
-  const liked = 50;
-
-
+  // const liked = 50;
 
   return (
     <>
       <div className='App'>
         <Navbar/>
         <div className="content">
-          <Home/>
+          <Discover/>
 
         </div>
       </div>

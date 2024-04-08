@@ -9,7 +9,7 @@ const Navbar = () => {
                 <a href="index.html"> <img class="userLogo" src="src\imgs\user.png" alt="logo" height="50" width="50"></img></a>
             </div>
         </nav>
-     );
+    );
 }
 
 export default Navbar;
