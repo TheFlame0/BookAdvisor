@@ -1,0 +1,109 @@
+.article {
+    position: relative;
+    background-color: #ffffff;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: #002245 solid ;
+    overflow-x: auto;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.9);
+    overflow: hidden; 
+    border-radius: 20px;
+}
+
+.book-table2 {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    /* border-radius: 20px; */
+
+}
+
+.search-container {
+    position: relative;
+    display: block;
+    width: 35%;
+}
+
+#searchbar {
+    width: 100%; /* Adjust based on button width, ensuring input and button fit within the container */
+    padding: 6px;
+    border: 1px solid #ddd; /* Add a border that matches the button for a cohesive look */
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 20px; /* Rounded left corners */
+    border-right: none; /* Remove right border to blend with button */
+}
+
+.search-container button {
+    position: absolute;
+    right: 0;
+    top: 8px; 
+    padding: 6px 10px;
+    background: #ddd;
+    border: 1px solid #ddd; /* Ensure the border matches the input */
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 20px; /* Rounded right corners */
+}
+
+.search-container button > img {
+    width: 3px; /* Adjust based on the size of your icon */
+    height: 3px;
+}
+
+.search-container button:hover {
+    background: #c2c2b1;
+}
+
+
+
+
+.row1{
+    background-color: #DADAC5;
+
+}
+th {
+    text-align:start;
+    background-color: #F8F8F2;
+    color: black;
+    text-align: left;
+    padding: 10px;
+    /* border-radius-top: 2%; */ 
+}
+
+td {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+table.book-table2 img {
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+td > button  {
+    display: inline-block;
+    background-color: #DADAC5;
+    border: black solid thin;
+    padding: 16px 8px;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+   
+}
+
+td > button:hover{
+    background-color: #c2c2b1;
+    transition: background-color 0.3s ease; /* Smooth transition for the color change */ 
+}
+
+#buttonImage{
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 5%;
+    text-align: center;
+    
+}
+

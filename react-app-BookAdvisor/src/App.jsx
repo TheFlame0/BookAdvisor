@@ -1,5 +1,6 @@
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';
+import BookShelf from './HomePage-Components/BookShelf';
 
 function App() {
   // const title = "My First React App";
@@ -10,9 +11,9 @@ function App() {
     <>
       <div className='App'>
         <Navbar/>
+        <Discover/>
         <div className="content">
-          <Discover/>
-
+        <BookShelf/>
         </div>
       </div>
 
