@@ -19,7 +19,32 @@ const BookShelf = () => {
                         </tr>
                         
                         <tr>
-                            <td><img src="src\imgs\Book1.jpeg" alt="Book 1"></img></td>
+                            <td> 
+                                <div class="cards-container">
+                                    <div class="card">
+                                        <div class="poster">
+                                            <img src="src\imgs\Book1.jpeg" alt="Book 11"></img>
+                                        </div>
+                                        <div class="details">
+                                            <h1>The Science of Selling</h1>
+                                            <h2>David Hoffeld</h2>
+                                            <div class="rating">
+                                                <i class="fas fa-star"></i>
+                                                <span>4.2/5</span>
+                                            </div>
+                                            <div class="tags">
+                                                <span class="tag">History</span>
+                                                <span class="tag">Data</span>
+                                                <span class="tag">English</span>
+                                            </div>
+                                            <p class="desc">
+                                                Marco, a disillusioned Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    {/*  add books */}
+                                </div>
+                            </td>
                             <td><img src="src\imgs\Book2.jpeg" alt="Book 2"></img></td>
                             <td><img src="src\imgs\Book3.jpeg" alt="Book 3"></img></td>
                             <td><img src="src\imgs\Book4.jpeg" alt="Book 4"></img></td>
@@ -52,7 +77,6 @@ const BookShelf = () => {
                             <td><img src="src\imgs\Book1.jpeg" alt="Book 15"></img></td>
                             <td><button type="submit"><img id="buttonImage" src="src\imgs\right-arrow.png" alt="NextBookButton"></img></button></td>
                         </tr>
-
                     </table>
                     
                 </div>
