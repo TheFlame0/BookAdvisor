@@ -22,7 +22,7 @@ return (
                   </table>
             </div>
             <div class="banner-text">
-                  <h2> <b> Still you do not know what book you want to read? Then Sign up to get an Advice about what book you would read!</b></h2>
+                  <h1> <b> Still you do not know what book you want to read? Then Sign up to get an Advice about what book you would read!</b></h1>
                   <button type="submit"> <b> Sign Up </b></button>
             </div>
       </div>
