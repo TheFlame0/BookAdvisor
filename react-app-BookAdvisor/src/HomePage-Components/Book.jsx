@@ -1,8 +1,6 @@
-import React from 'react';
 import './Book.css';
 const Book = ({ title, author, rating, tags, description, imageSrc, altText }) => {
     return (
-        <div>
             <div className="card ">
                 <div className="poster">
                     <img src={imageSrc} alt={altText} />
@@ -22,7 +20,7 @@ const Book = ({ title, author, rating, tags, description, imageSrc, altText }) =
                     <p className="desc">{description}</p>
                 </div>
             </div>
-        </div>
+
     );
 }
 

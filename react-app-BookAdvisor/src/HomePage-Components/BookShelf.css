@@ -4,125 +4,83 @@
 
 .article {
     position: relative;
-    background-color: #ffffff;
+    background-color: #DADAC5; /* Changed background color */
     margin-left: 10%;
     margin-right: 10%;
-    border: #002245 solid ;
+    border: #002245 solid;
     overflow-x: auto;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.9);
-    overflow: hidden; 
+    overflow: hidden;
     border-radius: 20px;
 }
 
-.book-table2 {
-    width: 100%;
-    table-layout: auto;
-    border-collapse: collapse;
-    /* border-radius: 20px; */
-
-}
-
-.scrollable-content {
-    overflow-x: auto; /* Enables horizontal scrolling */
-    width: 100%; /* Full width of its parent container */
-}
-
-.scrollable-content table {
-    max-width: 300%; 
-    width: auto; /* Allows the table to expand beyond 100% as needed */
-    border-collapse: collapse;
-}
-
-.scrollable-content td {
-    white-space: nowrap; /* Prevents content from wrapping */
-    padding: 5px 15px; /* Adequate padding for spacing */
-}
-
- 
-.search-container {
-    position: relative;
-    display: flex; /* Aligns children (input and button) in a row */
-    width: 100%; /* Adjust width as needed */
-    align-items: center; /* Centers items vertically */
-}
-
-
-#searchbar {
-    flex-grow: 1; /* Allows the search bar to fill available space */
-    padding: 6px;
-    border: 1px solid #696969;
-    margin-top: 8px;
-    font-size: 17px;
-    border-radius: 20px 0px 0px 20px; /* Rounded corners on the left side */
-}
-
-.search-container button {
-    position: relative;
-    bottom: -5px;
-    padding: 9px 10px; /* Adjust padding to match the height of the input */
-    margin: 0; /* Removes any margin */
-    background: #ffffff;
-    border: 1px solid #696969;
-    border-left: none; /* Removes the border between the button and the input */
-    cursor: pointer;
-    font-size: 17px;
-    border-radius: 0px 20px 20px 0px; /* Rounded corners on the right side */
-}
-
-.search-container button > img {
-    width: 20px; /* Adjusted size for visibility */
-    height: 20px;
-}
-
-.search-container button:hover {
-    background: #c2c2b1;
-}
-
-
-
-.row1{
-    background-color: #DADAC5;
-
-}
-
-
-th {
-    text-align:start;
-    background-color: #F8F8F2;
-    color: black;
-    text-align: left;
+.search-bar {
     padding: 10px;
-    /* border-radius-top: 2%; */ 
 }
 
-td {
-    text-align: center;
-
+#searchbar{
+    padding-left: 8px;
+    border-radius: 20px;
+    width: 300px;
 }
 
+#buttonImage{
+    width: 20px;
+}
 
-.book-table2 img {
+.bookshelf {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    /* padding: 20px; */
+}
+
+.section {
+    background-color: #F8F8F2;
+    padding: 10px;
+    /* border-radius: 10px; */
+}
+
+.section h2 {
+    margin-top: 0;
+    background-color: #F8F8F2; /* Background color for h2 */
+}
+
+.book-container {
+    background-color: white;
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+.book {
     width: 150px;
-    height: 200px;
+    text-align: center;
 }
 
-td > button  {
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.book-container > button  {
     display: inline-block;
     background-color: #DADAC5;
     border: black solid thin;
-    padding: 16px 8px;
+    padding: 9px 8px;
     border-radius: 40px;
     cursor: pointer;
     text-align: center;
-   
 }
 
-td > button:hover{
+.book-container > button:hover{
     background-color: #c2c2b1;
     transition: background-color 0.3s ease; /* Smooth transition for the color change */ 
 }
 
-#buttonImage{
+#NextbuttonImage{
     border: none;
     width: 20px;
     height: 20px;
@@ -134,7 +92,7 @@ td > button:hover{
 
 
 @media (max-width: 1025px) {
- 
+
 
     .scrollable-content {
         max-width: 1025px; 
@@ -184,11 +142,9 @@ td > button:hover{
     .details {
         font-size: 8px; /* Further reduce details font size for readability on phones */
     }
-    th{
-        /* columns: 6; */
-    }
 
-    td > button {
-        display: none;
+
+    .book-container > button {
+        display: none; /* Hide the "Next" button on mobile devices */
     }
 }
