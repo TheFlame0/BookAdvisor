@@ -20,7 +20,7 @@
 
 .card:hover .details {
     transform: translateY(-100%); /* Move up to cover the poster */
-    overflow-y: auto; /* Allows scrolling within the details box */
+    overflow: hidden; 
 }
 
 .poster img {
@@ -100,7 +100,7 @@
     font-size: 9px; /* Adapted font size for description */
     line-height: 1.2;
     margin-top: 4px; /* Add space above the description */
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
     text-overflow: ellipsis; /* Add ellipsis if text overflows */
     display: -webkit-box;
     -webkit-line-clamp: 3;  /* Limit to 3 lines */

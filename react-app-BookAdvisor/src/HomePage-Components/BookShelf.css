@@ -22,37 +22,56 @@
 
 }
 
-.search-container {
-    position: relative;
-    display: block;
-    width: 35%;
+.scrollable-content {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    width: 100%; /* Full width of its parent container */
 }
 
+.scrollable-content table {
+    max-width: 300%; 
+    width: auto; /* Allows the table to expand beyond 100% as needed */
+    border-collapse: collapse;
+}
+
+.scrollable-content td {
+    white-space: nowrap; /* Prevents content from wrapping */
+    padding: 5px 15px; /* Adequate padding for spacing */
+}
+
+ 
+.search-container {
+    position: relative;
+    display: flex; /* Aligns children (input and button) in a row */
+    width: 100%; /* Adjust width as needed */
+    align-items: center; /* Centers items vertically */
+}
+
+
 #searchbar {
-    width: 100%; /* Adjust based on button width, ensuring input and button fit within the container */
+    flex-grow: 1; /* Allows the search bar to fill available space */
     padding: 6px;
-    border: 1px solid #696969; /* Add a border that matches the button for a cohesive look */
+    border: 1px solid #696969;
     margin-top: 8px;
     font-size: 17px;
-    border-radius: 20px 00px 00px 20px; /* Rounded left corners */
-    /* border-right: none;  */
+    border-radius: 20px 0px 0px 20px; /* Rounded corners on the left side */
 }
 
 .search-container button {
-    position: absolute;
-    right: -41px;
-    top: 8px;
-    padding: 4px 12px 15px 10px;
+    position: relative;
+    bottom: -5px;
+    padding: 9px 10px; /* Adjust padding to match the height of the input */
+    margin: 0; /* Removes any margin */
     background: #ffffff;
-    /* border: 1px solid #000000;  */
+    border: 1px solid #696969;
+    border-left: none; /* Removes the border between the button and the input */
     cursor: pointer;
     font-size: 17px;
-    border-radius: 0px 20px 20px 0px; /* Rounded right corners */
+    border-radius: 0px 20px 20px 0px; /* Rounded corners on the right side */
 }
 
 .search-container button > img {
-    width: 3px; /* Adjust based on the size of your icon */
-    height: 3px;
+    width: 20px; /* Adjusted size for visibility */
+    height: 20px;
 }
 
 .search-container button:hover {
@@ -61,11 +80,12 @@
 
 
 
-
 .row1{
     background-color: #DADAC5;
 
 }
+
+
 th {
     text-align:start;
     background-color: #F8F8F2;
@@ -75,21 +95,10 @@ th {
     /* border-radius-top: 2%; */ 
 }
 
-/* td {
+td {
     text-align: center;
-    padding: 10px;
 
-} */
-
-.BookStyle {
-
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 10px ;
 }
-
 
 
 .book-table2 img {
@@ -122,34 +131,47 @@ td > button:hover{
     
 }
 
-.scrollable-content {
-    overflow-x: auto;
-    width: 100%;
+
+
+@media (max-width: 1025px) {
+ 
+
+    .scrollable-content {
+        max-width: 1025px; 
+        overflow-x: auto;
+      }
+
+    table.book-table2 img {
+        width: 100px; /* Smaller images to fit more content */
+        height: 130px;
+    }
+
+    .card {
+        width: 100px; /* Smaller cards to fit more content */
+        height: 130px;
+    }
+
+    .details {
+        font-size: 10px; /* Smaller font size for details */
+    }
+
+
 }
 
-.scrollable-content  {
-    width: auto;
-    border-collapse: collapse;
-}
-
-.scrollable-content td {
-    border: none;
-    padding: 5px 10px;
-    white-space: nowrap;
-}
-
-
-@media (max-width: 480px) {
+/* Media Queries for Phones */
+@media (max-width: 500px) {
     .article {
-        margin: 0;
+        margin: 40px 0 0 0;
         border: 0;
+        border-radius: 0%;
     }
 
-    .scrollable-content  {
-        min-width: 480px; /* Adjust the table width to be more suitable for phone screens */
-    }
+    .scrollable-content {
+        max-width: 450px; 
+        overflow-x: auto;
+      }
 
-    .book-table2 img {
+    table.book-table2 img {
         width: 80px; /* Further reduce image size for phone screens */
         height: 100px;
     }
