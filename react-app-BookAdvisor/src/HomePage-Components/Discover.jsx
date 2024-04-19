@@ -1,3 +1,4 @@
+import './Discover.css';
 const Discover = () => {
 return (
       <div className="banner-advertise">

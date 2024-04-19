@@ -1,8 +1,8 @@
 
 
 import Book from './Book';
-
-import { Button } from 'antd';
+import './BookShelf.css';
+import NavButton from './NavButton';
 const BookShelf = () => {
     return (
         <article className="article">
@@ -39,7 +39,7 @@ const BookShelf = () => {
                                         title="The Science of Selling" author="David Hoffeld" rating="4.2/5" tags={["History", "Data", "English"]} description="Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning." imageSrc="src/imgs/Book8.jpeg" altText="Book 11"
                                     />
 
-<Button type="primary" shape="circle"></Button>
+
  
                 </div>
 
@@ -48,6 +48,7 @@ const BookShelf = () => {
                 </div>
 
                 <div className="book-container">
+                <NavButton imageSrc={"src/imgs/left-arrow.png"} altText={"Next Book Button"} />
                                     <Book
                                         title="The Science of Selling" author="David Hoffeld" rating="4.2/5" tags={["History", "Data", "English"]} description="Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning." imageSrc="src/imgs/Book8.jpeg" altText="Book 11"
                                     />
@@ -63,7 +64,7 @@ const BookShelf = () => {
                                     <Book
                                         title="The Science of Selling" author="David Hoffeld" rating="4.2/5" tags={["History", "Data", "English"]} description="Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning." imageSrc="src/imgs/Book8.jpeg" altText="Book 11"
                                     />    
-                                    {/* <NavButton imageSrc={"src/imgs/right-arrow.png"} altText={"Next Book Button"} /> */}
+                                    <NavButton imageSrc={"src/imgs/right-arrow.png"} altText={"Next Book Button"} />
                </div>
 
                 <div className="section">
@@ -71,6 +72,7 @@ const BookShelf = () => {
                 </div>
 
                 <div className="book-container">
+                      
                                     <Book
                                         title="The Science of Selling" author="David Hoffeld" rating="4.2/5" tags={["History", "Data", "English"]} description="Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning." imageSrc="src/imgs/Book8.jpeg" altText="Book 11"
                                     />
@@ -87,6 +89,8 @@ const BookShelf = () => {
                                         title="The Science of Selling" author="David Hoffeld" rating="4.2/5" tags={["History", "Data", "English"]} description="Marco, a disillusioned backpacker in his late 20s, embarks on a solitary journey in search for meaning." imageSrc="src/imgs/Book8.jpeg" altText="Book 11"
                                     />  
                                     {/* <NavButton imageSrc={"src/imgs/right-arrow.png"} altText={"Next Book Button"} /> */}
+
+                                    
                 </div>
             </div>
 

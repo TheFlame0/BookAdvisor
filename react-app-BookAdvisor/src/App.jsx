@@ -1,32 +1,31 @@
 // import firebase from 'firebase/app';
-import 'firebase/firestore';
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import React, { useEffect, useState } from 'react';
+// import { initializeApp } from 'firebase/app';
+// import 'firebase/firestore';
+// import { getFirestore } from 'firebase/firestore';
+import React from 'react';
 import BookShelf from './HomePage-Components/BookShelf';
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';
 
 
+// // Initialize Firebase
+// const firebaseConfig = {
 
-// Initialize Firebase
-const firebaseConfig = {
+//   apiKey: "AIzaSyC6LgETW93tfyJ26Q9e0UbMsu-OgSgWa40",
+//   authDomain: "bookadvice-a2fe0.firebaseapp.com",
+//   projectId: "bookadvice-a2fe0",
+//   storageBucket: "bookadvice-a2fe0.appspot.com",
+//   messagingSenderId: "105964974950",
+//   appId: "1:105964974950:web:7fa191f6ad719bc2f34ea7"
 
-  apiKey: "AIzaSyC6LgETW93tfyJ26Q9e0UbMsu-OgSgWa40",
-  authDomain: "bookadvice-a2fe0.firebaseapp.com",
-  projectId: "bookadvice-a2fe0",
-  storageBucket: "bookadvice-a2fe0.appspot.com",
-  messagingSenderId: "105964974950",
-  appId: "1:105964974950:web:7fa191f6ad719bc2f34ea7"
-
-};
+// };
 
 
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
 
-// Get a Firestore instance
-const db = getFirestore(app);
+// // Get a Firestore instance
+// const db = getFirestore(app);
 
 // const App = () => {
 //   const [data, setData] = useState([]);

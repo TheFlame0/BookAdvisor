@@ -1,6 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .article {
     position: relative;
@@ -52,18 +49,11 @@
     overflow-x: auto;
     padding: 10px;
     gap: 20px;
+    flex-direction: row; 
+    align-items: center;
 }
 
-.book {
-    width: 150px;
-    text-align: center;
-}
-
-.book img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
+ 
 
 .book-container > button  {
     display: inline-block;
@@ -79,31 +69,11 @@
     background-color: #c2c2b1;
     transition: background-color 0.3s ease; /* Smooth transition for the color change */ 
 }
-
-#NextbuttonImage{
-    border: none;
-    width: 20px;
-    height: 20px;
-    border-radius: 5% ;
-    text-align: right;
-    
-}
-
-
+ 
 
 @media (max-width: 1025px) {
 
-
-    .scrollable-content {
-        max-width: 1025px; 
-        overflow-x: auto;
-      }
-
-    table.book-table2 img {
-        width: 100px; /* Smaller images to fit more content */
-        height: 130px;
-    }
-
+ 
     .card {
         width: 100px; /* Smaller cards to fit more content */
         height: 130px;
@@ -123,17 +93,8 @@
         border: 0;
         border-radius: 0%;
     }
-
-    .scrollable-content {
-        max-width: 450px; 
-        overflow-x: auto;
-      }
-
-    table.book-table2 img {
-        width: 80px; /* Further reduce image size for phone screens */
-        height: 100px;
-    }
-
+ 
+ 
     .card {
         width: 80px; /* Adjust card sizes for smaller screens */
         height: 100px;
@@ -146,5 +107,7 @@
 
     .book-container > button {
         display: none; /* Hide the "Next" button on mobile devices */
+        
     }
+ 
 }
