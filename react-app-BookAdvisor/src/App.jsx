@@ -6,6 +6,9 @@ import React from 'react';
 import BookShelf from './HomePage-Components/BookShelf';
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';
+import Home from './pages/Home.jsx';
+import SearchP from './pages/SearchP.jsx';
+import SignUp from './pages/SignUp.jsx';
 
 
 // // Initialize Firebase
@@ -62,16 +65,32 @@ import Navbar from './HomePage-Components/Navbar';
 
 
 const App = () => {
+  console.log(window.location.pathname)
+  let Page
+  switch(window.location.pathname){
+    case "/":
+      Page = Home
+      break
+      case "/Search":
+      Page = SearchP
+      break
+      case "/SignUp":
+      Page = SignUp
+      break
+  }
+  if(Page === SignUp){
+    return(<Page />)
+  }
+  else{
   return (
+
     <div className='App'>
       <Navbar />
-      <Discover />
-      <div className="content">
-        <BookShelf />
-      </div>
+      <Page />
     </div>
   );
 };
+}
 
 export default App;
 
