@@ -86,18 +86,15 @@ const App = () => {
 
     <div className='App'>
       <Navbar />
-<<<<<<< HEAD
       <Discover />
       <div className="content">
         <BookShelf />
         <Footer />
       </div>
-=======
       <Page />
->>>>>>> 0f5018e2e0d1d4c6de703363ba44098462a8b9b1
     </div>
   );
-};
+}
 }
 
 export default App;
