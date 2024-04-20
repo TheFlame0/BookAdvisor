@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #F8F8F2;
-  height: 200vh;
+  height: 250vh;
 }
 
 nav {
@@ -50,7 +49,7 @@ nav p {
 }
 
 @media (max-width: 500px) {
-  
+
   nav {
     margin-bottom: 50px;
   }
