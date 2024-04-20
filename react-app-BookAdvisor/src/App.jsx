@@ -68,17 +68,40 @@ import SignUp from './pages/SignUp.jsx';
 
 
 const App = () => {
+  console.log(window.location.pathname)
+  let Page
+  switch(window.location.pathname){
+    case "/":
+      Page = Home
+      break
+      case "/Search":
+      Page = SearchP
+      break
+      case "/SignUp":
+      Page = SignUp
+      break
+  }
+  if(Page === SignUp){
+    return(<Page />)
+  }
+  else{
   return (
+
     <div className='App'>
       <Navbar />
+<<<<<<< HEAD
       <Discover />
       <div className="content">
         <BookShelf />
         <Footer />
       </div>
+=======
+      <Page />
+>>>>>>> 0f5018e2e0d1d4c6de703363ba44098462a8b9b1
     </div>
   );
 };
+}
 
 export default App;
 
