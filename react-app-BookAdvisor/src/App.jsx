@@ -86,11 +86,12 @@ const App = () => {
 
     <div className='App'>
       <Navbar />
-      <Discover />
-      <div className="content">
+      {/* <Discover /> */}
+      {/* <div className="content">
         <BookShelf />
-        <Footer />
-      </div>
+       
+      </div> */}
+       <Footer />
       <Page />
     </div>
   );
