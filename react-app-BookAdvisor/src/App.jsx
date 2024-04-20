@@ -2,7 +2,6 @@
 // import { initializeApp } from 'firebase/app';
 // import 'firebase/firestore';
 // import { getFirestore } from 'firebase/firestore';
-import React from 'react';
 import BookShelf from './HomePage-Components/BookShelf';
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';

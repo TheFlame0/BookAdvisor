@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -9,13 +8,13 @@
 body {
   font-family: 'Manrope', sans-serif;
   background-color: #F8F8F2;
-  height: 300vh;
+  height: 250vh;
 }
 
 nav {
   background-color: #003366;
   z-index: 10000;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   /* padding-bottom: 10px; */
   position: sticky;
   top: 0;
@@ -49,3 +48,11 @@ nav p {
   color: whitesmoke;
 }
 
+@media (max-width: 500px) {
+
+  nav {
+    margin-bottom: 50px;
+  }
+  
+
+}
