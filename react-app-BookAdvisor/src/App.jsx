@@ -5,9 +5,10 @@
 import BookShelf from './HomePage-Components/BookShelf';
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';
+import { Footer } from 'antd/es/layout/layout';
+// import CustomFooter from './HomePage-Components/Footer';
 
-
-// // Initialize Firebase
+// // Initialize Firebas
 // const firebaseConfig = {
 
 //   apiKey: "AIzaSyC6LgETW93tfyJ26Q9e0UbMsu-OgSgWa40",
@@ -67,6 +68,7 @@ const App = () => {
       <Discover />
       <div className="content">
         <BookShelf />
+        <Footer />
       </div>
     </div>
   );
