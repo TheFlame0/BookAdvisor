@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import './Book.css';
 const Book = ({ title, author, rating, tags, description, imageSrc, altText }) => {
     return (
