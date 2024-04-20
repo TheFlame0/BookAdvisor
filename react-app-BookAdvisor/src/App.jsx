@@ -5,14 +5,11 @@
 import BookShelf from './HomePage-Components/BookShelf';
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';
-<<<<<<< HEAD
 import { Footer } from 'antd/es/layout/layout';
 // import CustomFooter from './HomePage-Components/Footer';
-=======
 import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
->>>>>>> 0f5018e2e0d1d4c6de703363ba44098462a8b9b1
 
 // // Initialize Firebas
 // const firebaseConfig = {
