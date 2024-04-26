@@ -5,7 +5,7 @@
 import BookShelf from './HomePage-Components/BookShelf';
 import Discover from './HomePage-Components/Discover';
 import Navbar from './HomePage-Components/Navbar';
-import { Footer } from 'antd/es/layout/layout';
+import Footer from  './HomePage-Components/Footer';
 // import CustomFooter from './HomePage-Components/Footer';
 import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
@@ -91,8 +91,9 @@ const App = () => {
         <BookShelf />
        
       </div> */}
-       <Footer />
+       
       <Page />
+      <Footer />
     </div>
   );
 }

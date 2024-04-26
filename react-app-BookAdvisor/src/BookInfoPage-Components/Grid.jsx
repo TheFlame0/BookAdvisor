@@ -2,37 +2,37 @@ import BookImage from "./bookImage";
 import AddToButton from "./AddToReadListBtn";
 import BookTitle from "./BookTitle";
 import AuthorName from "./AuthorName";
-import Rating from "./rating";
+import Rating from "./Rating";
 import BookDescribtion from "./BookDescribtion";
 import Locations from "./Locations";
 import Genres from "./Geners";
-import "./grid.css";
+import "./Grid.css";
 
-function PageoGrid (){
+function PageGrid (){
     return (
-        <div clacc = "grid-container">
-            <div class = "grid-item" id = "Book image">
+        <div className = "grid-container">
+            <div className = "grid-item" id = "Book image">
                 <BookImage></BookImage>
             </div>
-            <div class = "grid-item" id = "add to later button">
+            <div className = "grid-item" id = "add to later button">
                 <AddToButton></AddToButton>
             </div>
-            <div class = "grid-item" id = "Book title">
+            <div className = "grid-item" id = "Book title">
                 <BookTitle></BookTitle>
             </div>
-            <div class = "grid-item" id = "rating">
+            <div className = "grid-item" id = "rating">
                 <Rating></Rating>
             </div>
-            <div class = "grid-item" id = "Author's name" >
+            <div className = "grid-item" id = "Author's name" >
                 <AuthorName></AuthorName>
             </div>
-            <div class = "grid-item" id = "Book descrption">
+            <div className = "grid-item" id = "Book descrption">
                 <BookDescribtion></BookDescribtion>
             </div>
-            <div class = "grid-item" id = "Locations">
+            <div className = "grid-item" id = "Locations">
                 <Locations></Locations>
             </div>
-            <div class = "grid-item" id = "Genres">
+            <div className = "grid-item" id = "Genres">
                 <Genres></Genres>
             </div>
         </div>
@@ -40,4 +40,4 @@ function PageoGrid (){
         
 }
 
-export default PageGrid
+export default PageGrid;
