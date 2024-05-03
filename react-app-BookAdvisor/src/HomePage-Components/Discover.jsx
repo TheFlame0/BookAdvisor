@@ -20,7 +20,7 @@ const Discover = () => {
 
       <div className="banner-text">
         <h2><b>Still you do not know what book you want to read? Then Sign up to get an Advice about what book you would read!</b></h2>
-        <button type="submit">Sign Up</button>
+        <a href='/SignUp'><button type="submit">Sign Up</button></a>
       </div>
       
     </div>
