@@ -2,15 +2,13 @@
 // import { initializeApp } from 'firebase/app';
 // import 'firebase/firestore';
 // import { getFirestore } from 'firebase/firestore';
-import BookShelf from './HomePage-Components/BookShelf';
-import Discover from './HomePage-Components/Discover';
+import Footer from './HomePage-Components/Footer';
 import Navbar from './HomePage-Components/Navbar';
-import Footer from  './HomePage-Components/Footer';
 // import CustomFooter from './HomePage-Components/Footer';
 import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
-import profile from './pages/profile.jsx';
+// import SignUp from './pages/SignUp.jsx';
 
 // // Initialize Firebas
 // const firebaseConfig = {
@@ -78,12 +76,6 @@ const App = () => {
       case "/SignUp":
       Page = SignUp
       break
-      case "/Profile":
-        Page = profile
-        break
-      case "/add_book":
-        Page = add_book
-        break
   }
   if(Page === SignUp){
     return(<Page />)

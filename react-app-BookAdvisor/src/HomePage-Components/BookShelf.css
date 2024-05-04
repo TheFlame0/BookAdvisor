@@ -11,7 +11,7 @@
     border-radius: 20px;
 }
 
-.search-bar {
+/* .search-bar {
     padding: 10px;
 }
 
@@ -20,7 +20,7 @@
     padding-left: 8px;
     border-radius: 20px;
     width: 300px;
-}
+} */
 
 #buttonImage{
     width: 20px;
@@ -34,7 +34,7 @@
 }
 
 .section {
-    background-color: #F8F8F2;
+    background-color: #DADAC5;
     padding: 10px;
     /* border-radius: 10px; */
 }

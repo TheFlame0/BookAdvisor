@@ -7,12 +7,12 @@ const BookShelf = () => {
     return (
         <article className="article">
 
-                <form className="search-bar">
-                    {/* <input id="searchbar" type="text" placeholder="  Search books..." />
+                {/* <form className="search-bar">
+                    <input id="searchbar" type="text" placeholder="  Search books..." />
                     <button type="submit">
                         <img id="buttonImage" src="/src/imgs/search-interface-symbol.png" alt="Search Button"/>
-                    </button> */}
-                </form> 
+                    </button>
+                </form>  */}
 
             <div className="bookshelf">
                 <div className="section">

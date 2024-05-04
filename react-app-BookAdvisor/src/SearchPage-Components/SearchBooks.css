@@ -1,0 +1,78 @@
+.article {
+    position: relative;
+    background-color: #DADAC5;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: #002245 solid;
+    overflow-x: auto;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+}
+
+#searchbar{
+    height: 2rem;
+    padding-left: 8px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.bookshelf-Search {
+    /* display: flex;
+    justify-content: center;
+    padding: 20px;  */
+}
+
+.book-container-search {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 10px 0 10px 0; /* Adjusted to remove horizontal padding */
+    overflow: hidden;
+    max-height: auto;
+}
+
+@media (min-width: 1025px) {
+    .book-container-search {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .book-container-search {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        max-width: 100%;
+        margin: 20px 0; /* Less margin on very small devices */
+        border-radius: 10px; /* Smaller radius for a softer look */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .book-container-search {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .article {
+        max-width: 100%;
+        margin: 20px 0; /* Less margin on very small devices */
+        border-radius: 10px; /* Smaller radius for a softer look */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .book-container-search {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

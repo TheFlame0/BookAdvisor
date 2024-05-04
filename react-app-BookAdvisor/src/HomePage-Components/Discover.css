@@ -3,7 +3,7 @@
     display: flex;
     background-color: black;
     align-items: center;
-    padding: 10px 15px;
+    padding: 0px 0px 0px 15px;
     margin: 0 10%;
     margin-bottom: 100px;
     border-radius: 20px;
@@ -38,7 +38,7 @@
   .banner-text button {
     background-color: #004182;
     color: white;
-    padding: 2% 4%;
+    padding: 9px 13px;
     border: none;
     border-radius: 50px;
     display: inline-block;
@@ -149,6 +149,12 @@
         100% {
           transform: translateX(800%);
         }
+      }
+
+      .banner-text button {
+        padding: 9px 13px;
+        font-size: 12px;
+
       }
 
   }

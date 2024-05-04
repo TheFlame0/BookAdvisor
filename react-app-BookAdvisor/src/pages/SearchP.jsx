@@ -1,12 +1,19 @@
-import BookShelf from "../SearchPage-Components/BookShelf"
-import'./SearchP.css'
+import SearchBooks from "../SearchPage-Components/SearchBooks"
+import './SearchP.css'
 const SearchP = () =>{
     return(
-        <>
-        <h1>Search for a book</h1>
-        <input className="searchBar" type="text" placeholder="            enter title,auther, or gnere of the book" />
-        <BookShelf />
-        </>
+    <> 
+        <div className="search-page"> {/* Flex container for centering */}
+            <h1>Search for a book</h1>
+            <input 
+                className="searchBar" 
+                type="text" 
+                placeholder="Enter title, author, or genre of the book"
+            />
+            
+        </div>
+        <SearchBooks />
+    </>
     )
 }
 

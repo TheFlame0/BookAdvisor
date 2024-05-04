@@ -4,8 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px; /* Adjust gap as needed */
+    gap: 20px; 
 }
+
 
 .card {
     position: relative;
@@ -56,6 +57,7 @@
     transition: transform .3s ease;
     
 }
+
 
 .details h1 {
     text-align: left;

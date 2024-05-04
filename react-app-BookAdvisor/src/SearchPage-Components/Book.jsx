@@ -1,7 +1,8 @@
 import './Book.css';
+// eslint-disable-next-line react/prop-types
 const Book = ({ title, author, rating, tags, description, imageSrc, altText }) => {
     return (
-        <div>
+        <div className='cards-container'>
             <div className="card ">
                 <div className="poster">
                     <img src={imageSrc} alt={altText} />
