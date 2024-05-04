@@ -8,6 +8,8 @@ import Navbar from './HomePage-Components/Navbar';
 import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
+import profile from './pages/profile.jsx';
+import log_in from './pages/LogIn.jsx'
 // import SignUp from './pages/SignUp.jsx';
 
 // // Initialize Firebas
@@ -76,8 +78,17 @@ const App = () => {
       case "/SignUp":
       Page = SignUp
       break
+      case "/Profile":
+        Page = profile
+        break
+      case "/add_book":
+        Page = add_book
+        break
+      case "/LogIn":
+        Page = log_in
+        break
   }
-  if(Page === SignUp){
+  if(Page === SignUp || Page === log_in){
     return(<Page />)
   }
   else{

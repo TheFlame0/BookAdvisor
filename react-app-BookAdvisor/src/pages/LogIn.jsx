@@ -28,7 +28,7 @@ const LogIn = () => {
                                     </div>
                                     <button type="submit">Log In</button>
                                 </form>
-                                <p className="login-link">Do not you have an account? <a href="#">Sign Up</a></p>
+                                <p className="login-link">Do not you have an account? <a href="/SignUp">Sign Up</a></p>
                             </div>
                         </div>
                     </div>
