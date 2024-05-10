@@ -1,18 +1,23 @@
-import "./profile.css";
+import './profile.css';
+import Navbar from '../HomePage-Components/Navbar';
+import Footer from  '../HomePage-Components/Footer';
 
-const profile = ({ className, ...props }) => {
-  return (
-    <div className={"acccount-page " + className}>
-      <div className="aiman-alhaimi">AIMAN ALHAIMI </div>
-      <div className="rectangle-1"></div>
-      <div className="bookshelf-Search">
-                <div className="book-container-search">
- 
+
+const UserProfile = () => {
+    return ( 
+        <>
+          <div className="main-profile">
+          {/* <Navbar /> */}
+            <div className="imgProfile-container">
+              <img src="/src/imgs/user.png" alt="" className="imgProfile"/>
+
             </div>
+            {/* <Footer /> */}
+          </div>
 
-        </div>
-    </div>
-  );
-};
+      </>
 
-export default profile;
+     );
+}
+ 
+export default UserProfile;

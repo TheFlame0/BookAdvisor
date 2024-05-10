@@ -1,4 +1,4 @@
-import Book from './Book.jsx';
+import Book from '../HomePage-Components/Book.jsx';
 import './SearchBooks.css';
 
 const SearchBooks = () => {

@@ -44,17 +44,16 @@
     border-radius: 10px;
 } */
 .details {
-    /* position: absolute; */
-    bottom: 100%; /* Initially positioned below the card */
+    position: absolute;
     left: 0;
     width: 100%;
-    padding: 8px 8px 20px 8px; 
+    padding: 8px 8px 10px 8px; 
     background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     color: #fff;
     font-size: 12px; /* Scaled down font size */
     z-index: 2;
     transition: transform .3s ease;
-    
+    top: 100%;
 }
 
 .details h1 {
