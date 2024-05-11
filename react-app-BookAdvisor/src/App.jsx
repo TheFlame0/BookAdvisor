@@ -103,7 +103,7 @@ const App = () => {
       </div> */}
        
       <Page />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
