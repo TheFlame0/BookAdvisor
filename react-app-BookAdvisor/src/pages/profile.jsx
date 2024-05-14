@@ -35,9 +35,9 @@ const UserProfile = () => {
     });
   }, []);
 
-  // if (!bookData) {
-  //   return <div>Loading...</div>;
-  // }
+  if (!bookData) {
+    return <div>Loading...</div>;
+  }
   return (
 
     <>
