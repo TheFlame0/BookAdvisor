@@ -22,7 +22,7 @@ const Book = ({ title, author, rating, tags, description, imageSrc, altText }) =
                     <p className="desc">{description}</p>
                 </div>
             </div>
-            </div>
+        </div>
 
     );
 }
