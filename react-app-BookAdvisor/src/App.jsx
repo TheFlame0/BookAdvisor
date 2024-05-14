@@ -9,7 +9,9 @@ import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
 import profile from './pages/profile.jsx';
-import log_in from './pages/LogIn.jsx'
+import log_in from './pages/LogIn.jsx';
+// import chatBot from './pages/chatBot.jsx';
+
 // import SignUp from './pages/SignUp.jsx';
 
 // // Initialize Firebas
@@ -65,6 +67,7 @@ import log_in from './pages/LogIn.jsx'
 // export default App;
 
 
+
 const App = () => {
   console.log(window.location.pathname)
   let Page
@@ -103,11 +106,14 @@ const App = () => {
       </div> */}
        
       <Page />
+      {/* <chatBot/> */}
       {/* <Footer /> */}
     </div>
   );
 }
+
 }
 
 export default App;
+
 
