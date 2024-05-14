@@ -8,8 +8,9 @@ import Navbar from './HomePage-Components/Navbar';
 import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
-import profile from './pages/profile.jsx';
-import log_in from './pages/LogIn.jsx'
+import UserProfile from './pages/profile.jsx';
+import LogIn from './pages/LogIn.jsx';
+import {BrowserRouter as Router , Route , Routes} from "react-router-dom";
 // import SignUp from './pages/SignUp.jsx';
 
 // // Initialize Firebas
@@ -66,48 +67,32 @@ import log_in from './pages/LogIn.jsx'
 
 
 const App = () => {
-  console.log(window.location.pathname)
-  let Page
-  switch(window.location.pathname){
-    case "/":
-      Page = Home
-      break
-      case "/Search":
-      Page = SearchP
-      break
-      case "/SignUp":
-      Page = SignUp
-      break
-      case "/Profile":
-        Page = profile
-        break
-      case "/add_book":
-        Page = add_book
-        break
-      case "/LogIn":
-        Page = log_in
-        break
-  }
-  if(Page === SignUp || Page === log_in){
-    return(<Page />)
-  }
-  else{
+  
   return (
-
+    <Router>
     <div className='App'>
       <Navbar />
-      {/* <Discover /> */}
-      {/* <div className="content">
-        <BookShelf />
-       
-      </div> */}
-       
-      <Page />
+        <div className='Content'>
+          <Routes>
+            <Route path="/" element = {<Home />} />
+            <Route path="/Search" element = {<SearchP/>} />
+            <Route path="/SignUp" element = {<SignUp />} />
+            <Route path="/LogIn" element = {<LogIn />} />
+            <Route path="/Profile" element = {<UserProfile />} />
+            <Route path="/add_book" element = {<></>} />  
+          </Routes>
+        </div>
       <Footer />
     </div>
+  </Router>
   );
-}
 }
 
 export default App;
-
+//<div className='Content'>
+//<Switch>
+ // <Route path="/">
+   // <Page />
+  //</Route>
+//</Switch>
+// </div>

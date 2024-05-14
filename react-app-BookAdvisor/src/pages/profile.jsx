@@ -7,7 +7,6 @@ const UserProfile = () => {
     return ( 
         <>
           <div className="main-profile">
-          {/* <Navbar /> */}
             <div className="imgProfile-container">
               <img src="/src/imgs/user.png" alt="" className="imgProfile"/>
 
