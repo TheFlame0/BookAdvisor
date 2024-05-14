@@ -1,5 +1,5 @@
 import './profile.css';
-// import React, { useEffect, useState } from 'react';
+ import React, { useEffect, useState } from 'react';
 // import { database } from './firebaseConfig';
 // import { ref, onValue } from 'firebase/database';
 import Book from '../HomePage-Components/Book.jsx';
@@ -7,31 +7,33 @@ import Book from '../HomePage-Components/Book.jsx';
 const UserProfile = () => {
   // const [bookData, setBookData] = useState(null);
 
-  useEffect(() => {
-    const bookRef = ref(database, '0'); // Adjust the path as needed
-    onValue(bookRef, (snapshot) => {
-      const data = snapshot.val();
-      if (data) {
-        // Ensure all fields are strings
-        const book = {
-          book_authors: String(data.book_authors),
-          book_desc: String(data.book_desc),
-          book_rating: String(data.book_rating),
-          book_rating_count: String(data.book_rating_count),
-          book_review_count: String(data.book_review_count),
-          book_title: String(data.book_title),
-          genres: String(data.genres),
-          image_url: String(data.image_url),
-        };
-        setBookData(book);
-        console.log(book)
-      } else {
-        setBookData(null);
-      }
-    }, (error) => {
-      console.error('Error fetching data: ', error);
-    });
-  }, []);
+  // useEffect(() => {
+  //   const bookRef = ref(database, '0'); // Adjust the path as needed
+  //   onValue(bookRef, (snapshot) => {
+  //     const data = snapshot.val();
+  //     if (data) {
+  //       // Ensure all fields are strings
+  //       const book = {
+  //         book_authors: String(data.book_authors),
+  //         book_desc: String(data.book_desc),
+  //         book_rating: String(data.book_rating),
+  //         book_rating_count: String(data.book_rating_count),
+  //         book_review_count: String(data.book_review_count),
+  //         book_title: String(data.book_title),
+  //         genres: String(data.genres),
+  //         image_url: String(data.image_url),
+  //       };
+  //       setBookData(book);
+  //       console.log(book)
+  //     } else {
+  //       setBookData(null);
+  //     }
+  //   }, (error) => {
+  //     console.error('Error fetching data: ', error);
+  //   });
+  // }, []);
+
+
 
   // if (!bookData) {
   //   return <div>Loading...</div>;
@@ -46,10 +48,7 @@ const UserProfile = () => {
   //   });
   // }, []);
   return (
-
     <>
-      {/* <Navbar /> */}
-
           <div className="main-profile">
             <div className='container-name-img'>
               <div className="imgProfile-container">
@@ -87,10 +86,11 @@ const UserProfile = () => {
                 
       {/* <Footer /> */}
       {/*  */}
-{bookData&& <div>
-      <h1>{bookData.book_title}</h1>
+</>
+//{bookData&& <div>
+      //<h1>{bookData.book_title}</h1>
 
-      {/* <h1>{bookData.book_title}</h1>
+      /* <h1>{bookData.book_title}</h1>
       <img src={bookData.image_url} alt={bookData.book_title} />
       <p><strong>Authors:</strong> {bookData.book_authors.replace('|', ', ')}</p>
       <p><strong>Description:</strong> {bookData.book_desc}</p>
@@ -104,10 +104,9 @@ const UserProfile = () => {
       
 
   
-      <p><strong>Genres:</strong> {bookData.genres.replace('|', ', ')}</p> */}
+      <p><strong>Genres:</strong> {bookData.genres.replace('|', ', ')}</p> */
 
-      {/*  */}
-    </>
+      
 
   );
 }

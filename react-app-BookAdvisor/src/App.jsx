@@ -10,7 +10,8 @@ import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
 import UserProfile from './pages/profile.jsx';
 import LogIn from './pages/LogIn.jsx';
-import {BrowserRouter as Router , Route , Routes} from "react-router-dom";;
+import {BrowserRouter as Router , Route , Routes} from "react-router-dom";
+import add_book from './pages/add_book.jsx';
 // import chatBot from './pages/chatBot.jsx';
 
 // import SignUp from './pages/SignUp.jsx';
@@ -82,7 +83,7 @@ const App = () => {
             <Route path="/SignUp" element = {<SignUp />} />
             <Route path="/LogIn" element = {<LogIn />} />
             <Route path="/Profile" element = {<UserProfile />} />
-            <Route path="/add_book" element = {<></>} />  
+            <Route path="/add_book" element = {<add_book />} />  
           </Routes>
         </div>
       <Footer />
