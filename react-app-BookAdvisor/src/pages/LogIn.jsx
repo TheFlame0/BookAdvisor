@@ -1,12 +1,10 @@
-import Footer from '../HomePage-Components/Footer';
-import Navbar from '../HomePage-Components/Navbar';
+
 import './LogIn.css';
 const LogIn = () => {
     return (
         <>
            <section className="sign-up-page">
             <div className='content'>
-                    <Navbar />
                     <div className="container">
                         <div className="left-column">
                             <div className="logo-container">
@@ -33,7 +31,6 @@ const LogIn = () => {
                         </div>
                     </div>
             </div>
-            <Footer />
         </section>
         
         </>

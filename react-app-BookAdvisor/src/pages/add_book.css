@@ -2,27 +2,26 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
-.sign-up-page{
+.add-book-card{
     background-color: #004285;
     height: 55vh;
     width: 100%;
 }
 
-.container {
+.card-container {
     display: flex;
     min-height: 80vh;
     width: 50vw; 
-    /* margin: auto;  */
-    margin-top: 40px;
+    margin: auto; 
     border-radius: 20px;
     background-color: #003366;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
-.left-column {
+.left-side-card {
     background-color: #003366;
     flex-basis: 40%;
     color: white;
@@ -33,17 +32,17 @@ body {
 
 }
 
-.logo-container {
+.book-img-container {
     text-align: center;
 }
 
-.logo-container img {
+.book-img-container img {
     max-width: 80%;
     border-radius: 20px;
     margin: 20px;
 }
 
-.right-column {
+.right-side-card {
     flex-basis: 60%;
     background-color: #F8F8F2;
     display: flex;
@@ -53,29 +52,29 @@ body {
     border-bottom-left-radius: 20px;
 }
 
-.signup-container {
+.book-details-container {
     width: 80%;
     max-width: 400px;
 }
 
-.signup-container h2 {
+.book-details-container h2 {
     text-align: left;
     margin-bottom: 20px;
 }
 
-.form-row {
+.detail-row {
     display: flex;
     justify-content: space-between;
     gap: 10px;
 }
 
-.form-group {
+.detail-group {
     position: relative;
     margin-top: 20px;
     flex: 1;
 }
 
-.form-group input {
+.detail-group input {
     width: 100%;
     border: 1px solid #717171;
     border-radius: 4px;
@@ -83,7 +82,7 @@ body {
     background-color: #F8F8F2;
 }
 
-.form-group label {
+.detail-group label {
     background-color: #F8F8F2;
     color: #999;
     font-size: 10px;
@@ -98,7 +97,7 @@ body {
     color: #333;
 }
 
-#signupForm button {
+#book-details button {
     width: 100%;
     padding: 12px 15px;
     border: none;
@@ -111,7 +110,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#signupForm button:hover {
+#book-details button:hover {
     background-color: #001a33; 
 }
 
@@ -132,42 +131,40 @@ body {
 
 @media (max-width: 768px) {
 
-    .container {
+    .card-container {
         flex-direction: column; 
         width: 60vw;
         min-height: 50vh;
     }
 
-    .logo-container img {
+    .book-img-container img {
         max-width: 50%;
     }
 
-    .right-column {
+    .right-side-card {
         padding: 20px;
         border-top-left-radius: 0px;
         border-bottom-left-radius: 0px;
     }
 
-    .signup-container h2 {
+    .book-details-container h2 {
         text-align: center;
     }
 
 }
 
 @media (max-width: 480px) {
-    .container {
+    .card-container {
         width: 65vw; 
     }
 
-    .form-row {
+    .detail-row {
         flex-direction: column;
     }
 }
 
-
-
 /* for media */
-/* .sign-up-page .container {
+/* .add-book-card .card-container {
     width: 50vw;
     margin: auto;
     border-radius: 20px;
