@@ -1,12 +1,12 @@
 import './SignUp.css';
-// import Navbar from '../HomePage-Components/Navbar';
-// import Footer from  '../HomePage-Components/Footer';
+import Navbar from '../HomePage-Components/Navbar';
+import Footer from  '../HomePage-Components/Footer';
 const SignUp = () => {
     return (
         <>
            <section className="sign-up-page">
             <div className='content'>
-                    {/* <Navbar /> */}
+                    <Navbar />
                     <div className="container">
                         <div className="left-column">
                             <div className="logo-container">
@@ -47,7 +47,7 @@ const SignUp = () => {
                         </div>
                     </div>
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </section>
         
         </>
