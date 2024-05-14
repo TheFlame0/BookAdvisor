@@ -9,6 +9,7 @@ body {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    
 }
 
 .main-profile {
@@ -16,7 +17,7 @@ body {
     height: 25vh;
     width: 100%;
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; 
     align-items: flex-end; /* Align to the bottom of the container */
     position: relative;
 }
@@ -25,30 +26,98 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center; /* Center text horizontally */
+    text-align: center; 
     position: relative;
 }
 
 .imgProfile-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the image and text horizontally */
+    align-items: center; 
     position: absolute;
     top: 50%;
     transform: translateY(-40%);
 }
 
 .imgProfile {
-    width: 150px; /* Set a fixed width */
-    height: 150px; /* Set a fixed height */
+    width: 150px;
+    height: 150px; 
     border: 7px solid #7b57b2;
-    border-radius: 50%; /* Ensures the image remains a circle */
+    border-radius: 50%; 
     overflow: hidden;
 }
 
 .container-name-img p {
-    margin-top: 20px; /* Add some space between the image and the text */
-    padding: 0 10px; /* Add some padding for better text readability */
-    max-width: 90%; /* Ensure text doesn't go beyond container width */
+    margin-top: 20px; 
+    padding: 0 10px; 
+    max-width: 90%; 
     word-wrap: break-word; /* Wrap long words to the next line */
+}
+
+.layer{
+    background-color: #F8F8F2;
+    height: 20vh;
+}
+
+
+.MyBook-container {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px; 
+    /* padding: 10px; */
+    align-content: flex-start;
+}
+
+.Book {
+    flex-grow: 1;
+}
+
+.bookshelf-Profile {
+    position: relative;
+    background-color: #ffffff;
+    /* margin-top: 9%; */
+    margin-left: 8%;
+    margin-right: 9%;
+    border: #002245 solid;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
+}
+
+@media (max-width: 1024px) {
+    .MyBook-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+    }
+}
+
+@media (max-width: 768px) {
+    .bookshelf-Profile {
+        max-width: 100%;
+        margin: 20px 0;
+        border-radius: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .MyBook-container {
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .bookshelf-Profile {
+        max-width: 100%;
+        /* margin: 20px 0; */
+        border-radius: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .MyBook-container {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); 
+    }
 }

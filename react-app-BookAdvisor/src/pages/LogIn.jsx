@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Footer from '../HomePage-Components/Footer';
 import Navbar from '../HomePage-Components/Navbar';
 import './LogIn.css';
@@ -6,7 +7,6 @@ const LogIn = () => {
         <>
            <section className="sign-up-page">
             <div className='content'>
-                    <Navbar />
                     <div className="container">
                         <div className="left-column">
                             <div className="logo-container">
@@ -28,12 +28,11 @@ const LogIn = () => {
                                     </div>
                                     <button type="submit">Log In</button>
                                 </form>
-                                <p className="login-link">Do not you have an account? <a href="/SignUp">Sign Up</a></p>
+                                <p className="login-link">Do not you have an account? <Link to="/SignUp">Sign Up</Link></p>
                             </div>
                         </div>
                     </div>
             </div>
-            <Footer />
         </section>
         
         </>

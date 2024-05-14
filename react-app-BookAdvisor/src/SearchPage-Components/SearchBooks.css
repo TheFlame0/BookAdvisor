@@ -22,30 +22,31 @@
 }
 
 .bookshelf-Search {
-    /* display: flex;
-    justify-content: center;
-    padding: 20px;  */
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vh;
 }
 
 .book-container-search {
     background-color: white;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    padding: 10px 0 10px 0; /* Adjusted to remove horizontal padding */
-    overflow: hidden;
-    max-height: auto;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px; 
+    /* padding: 10px; */
+    align-content: flex-start;
 }
 
-@media (min-width: 1025px) {
-    .book-container-search {
-        grid-template-columns: repeat(5, 1fr);
-    }
+.Book {
+    flex-grow: 1;
 }
 
 @media (max-width: 1024px) {
     .book-container-search {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
     }
 }
 
@@ -59,7 +60,11 @@
     }
 
     .book-container-search {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    }
+
+    .details {
+        display: none; /* Further reduce details font size for readability on phones */
     }
 }
 
@@ -73,6 +78,10 @@
     }
 
     .book-container-search {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+
+    .details {
+        display: none; /* Further reduce details font size for readability on phones */
     }
 }
