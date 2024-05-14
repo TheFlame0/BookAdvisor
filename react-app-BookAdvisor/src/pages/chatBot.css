@@ -1,0 +1,383 @@
+.mensagens {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 20px;
+    background-color: #fdfdff;
+    border: 1px solid #e1e2ff;
+    box-sizing: border-box;
+    width: 622px;
+    height: 1057px;
+}
+.op {
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+    letter-spacing: 0.14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.avatar1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 64px;
+    background-color: #7879f1;
+    width: 56.8px;
+    height: 56.8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.avatar {
+    position: absolute;
+    top: 917px;
+    left: 64px;
+    width: 56.8px;
+    height: 56.8px;
+    text-align: center;
+    font-family: Roboto;
+}
+.perfilChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #fff;
+    border: 1px solid #dfe0eb;
+    box-sizing: border-box;
+    width: 612.1px;
+    height: 83px;
+}
+.chatBot {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    width: 167px;
+    height: 15.7px;
+}
+.chatBotWrapper {
+    position: absolute;
+    top: 25px;
+    left: 103px;
+    width: 167px;
+    height: 15.7px;
+}
+.avatarIcon {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    border-radius: 64px;
+    width: 68px;
+    height: 68px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.filledactioninfoIcon {
+    position: absolute;
+    top: 23px;
+    left: 566px;
+    width: 36px;
+    height: 37px;
+    overflow: hidden;
+}
+.perfil {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 612.1px;
+    height: 83px;
+    font-size: 16px;
+    color: #000;
+}
+.envioChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #a5a6f6;
+    box-sizing: border-box;
+    width: 596.4px;
+    height: 48.1px;
+}
+.fillededitorattachFileIcon {
+    position: absolute;
+    top: 5.07px;
+    left: 47.31px;
+    width: 20.3px;
+    height: 20.3px;
+    overflow: hidden;
+}
+.groupChild {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #5d5fef;
+    width: 33.8px;
+    height: 33.8px;
+}
+.filledcontentsendIcon {
+    position: absolute;
+    top: 6.76px;
+    left: 6.76px;
+    width: 20.3px;
+    height: 20.3px;
+    overflow: hidden;
+}
+.rectangleParent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 33.8px;
+    height: 33.8px;
+}
+.fillednavigationcheckIcon {
+    position: absolute;
+    top: 5.07px;
+    left: 81.09px;
+    width: 20.3px;
+    height: 20.3px;
+    overflow: hidden;
+}
+.fillededitorattachFileParent {
+    position: absolute;
+    top: 8.45px;
+    left: 481.48px;
+    width: 101.4px;
+    height: 33.8px;
+}
+.digiteAMensagem {
+    position: absolute;
+    top: 18.58px;
+    left: 27.03px;
+    display: inline-block;
+    width: 152px;
+    height: 11.8px;
+}
+.envio {
+    position: absolute;
+    top: 981px;
+    left: 13px;
+    width: 596.4px;
+    height: 48.1px;
+    font-size: 12px;
+    color: #dbdbdb;
+}
+.vectorIcon {
+    position: absolute;
+    height: 0.75%;
+    width: 5%;
+    top: 78.88%;
+    right: 91.36%;
+    bottom: 20.36%;
+    left: 3.64%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+.avatar2 {
+    position: absolute;
+    top: 15.38px;
+    left: 0px;
+    border-radius: 64px;
+    background-color: #7879f1;
+    width: 35.5px;
+    height: 35.5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.pm {
+    position: absolute;
+    top: 79.28px;
+    left: 68.63px;
+    font-size: 10px;
+    font-family: 'Public Sans';
+    color: #333;
+    display: inline-block;
+    width: 62.7px;
+    height: 14.2px;
+}
+.chat1Child {
+    position: absolute;
+    top: 0px;
+    left: 68.63px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #a5a6f6;
+    box-sizing: border-box;
+    width: 428.4px;
+    height: 67.5px;
+}
+.loremIpsumHas {
+    position: absolute;
+    top: 9.47px;
+    left: 82.83px;
+    font-size: 12px;
+    letter-spacing: 0.14px;
+    line-height: 20px;
+    color: #5d5fef;
+    display: flex;
+    align-items: center;
+    width: 402.3px;
+    height: 47.3px;
+}
+.chat1 {
+    position: absolute;
+    top: 114px;
+    left: 13px;
+    width: 497px;
+    height: 93.5px;
+    font-family: Roboto;
+}
+.chat11 {
+    position: absolute;
+    top: 528.37px;
+    left: 13px;
+    width: 497px;
+    height: 93.5px;
+    font-family: Roboto;
+}
+.chat12 {
+    position: absolute;
+    top: 325.37px;
+    left: 13px;
+    width: 497px;
+    height: 93.5px;
+    font-family: Roboto;
+}
+.chat13 {
+    position: absolute;
+    top: 739.73px;
+    left: 13px;
+    width: 497px;
+    height: 93.5px;
+    font-family: Roboto;
+}
+.avatarIcon1 {
+    position: absolute;
+    top: 9.68px;
+    left: 450px;
+    border-radius: 64px;
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.pm4 {
+    position: absolute;
+    top: 76.63px;
+    left: 386.74px;
+    display: inline-block;
+    width: 46.7px;
+    height: 14.4px;
+}
+.chat2Child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #7879f1;
+    width: 433.4px;
+    height: 68.2px;
+}
+.loremIpsumHas4 {
+    position: absolute;
+    top: 9.58px;
+    left: 19.16px;
+    font-size: 12px;
+    letter-spacing: 0.14px;
+    line-height: 20px;
+    font-family: Roboto;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    width: 397.5px;
+    height: 47.9px;
+}
+.chat2 {
+    position: absolute;
+    top: 207.37px;
+    left: 118px;
+    width: 495px;
+    height: 91px;
+    font-size: 10px;
+    color: #333;
+}
+.chat21 {
+    position: absolute;
+    top: 621.73px;
+    left: 118px;
+    width: 495px;
+    height: 91px;
+    font-size: 10px;
+    color: #333;
+}
+.chat22 {
+    position: absolute;
+    top: 418.73px;
+    left: 118px;
+    width: 495px;
+    height: 91px;
+    font-size: 10px;
+    color: #333;
+}
+.chat23 {
+    position: absolute;
+    top: 833.1px;
+    left: 118px;
+    width: 495px;
+    height: 91px;
+    font-size: 10px;
+    color: #333;
+}
+.groupItem {
+    position: absolute;
+    top: 47.5px;
+    left: 42.15px;
+    border-radius: 50%;
+    background-color: #fffcfc;
+    width: 79px;
+    height: 79px;
+}
+.image1Icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 163.9px;
+    height: 163.9px;
+    object-fit: cover;
+}
+.ellipseParent {
+    position: absolute;
+    top: 1029px;
+    left: 496px;
+    width: 163.9px;
+    height: 163.9px;
+}
+.mensagensParent {
+    width: 100%;
+    position: fixed;
+    height: 1192.9px;
+    text-align: left;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Public Sans';
+    bottom: 10px;     /* Adjust the bottom position as needed */
+    right: 10px;      /* Adjust the right position as needed */
+    width: 50px;      /* Adjust the width as needed */
+    height: auto;     /* Maintain aspect ratio */
+    z-index: 1000;    /* Ensure it stays on top of other elements */
+}
+
+

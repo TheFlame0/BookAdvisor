@@ -10,6 +10,7 @@ import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
 import profile from './pages/profile.jsx';
 import log_in from './pages/LogIn.jsx';
+// import chatBot from './pages/chatBot.jsx';
 
 // import SignUp from './pages/SignUp.jsx';
 
