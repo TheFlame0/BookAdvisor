@@ -1,26 +1,40 @@
-/* the idea is as follows: 
-* Take the "to read list" from user
-* depending on that, we can generate a profile score for him
-* find books that realte to that score 
-* put them in the recommended books array 
-*/
+// Define the initial genre list and user score list
+let genre_list = [/* list of all genres */];
+let user_score = Array(genre_list.length).fill(0);
 
-/* genre_list = [list of all genres]
-* User_score = [value of each genre to the user, intialized at 0]  
-* Update_user_score: 
-*   for book in userReadList: 
-*       temp = get(book.geners())
-*       for genere in temp:  
-*           user_score[genre_list.indexOf(genre)] =+ 1
-*/ 
+// Function to update user score based on genres of books read by the user
+function update_user_score(userReadList) {
+    userReadList.forEach(book => {
+        let temp = book.genres(); // Assuming book.genres() returns an array of genres for the book
+        temp.forEach(genre => {
+            let index = genre_list.indexOf(genre);
+            if (index !== -1) {
+                user_score[index] += 1;
+            }
+        });
+    });
+}
 
-/*  book_list = [list of all books, sorted alphabetically ] 
-*   user_book_dict = [score for each book on the webstie] 
-*   for book in book_list: 
-*       book_score = 0
-*       for genre in book.genres(): 
-*           book_score += 1*user_score[genre_list.indexOf(genre)]
-*       user_book_scores[book_list.indexOf(book)] = book_score
-*   sort(user_book_dict)
-*   recommendation_list = [top 5-10 items of user_book_dict]
-*/
+// Define the book list and user book dictionary (scores)
+let book_list = [/* list of all books, sorted alphabetically */];
+let user_book_dict = new Map();
+
+// Calculate the score for each book based on user preferences
+book_list.forEach(book => {
+    let book_score = 0;
+    book.genres().forEach(genre => {
+        let index = genre_list.indexOf(genre);
+        if (index !== -1) {
+            book_score += 1 * user_score[index];
+        }
+    });
+    user_book_dict.set(book, book_score);
+});
+
+// Sort the user book dictionary by scores in descending order
+let sorted_books = Array.from(user_book_dict.entries()).sort((a, b) => b[1] - a[1]);
+
+// Create the recommendation list with top 5-10 items
+let recommendation_list = sorted_books.slice(0, 10).map(entry => entry[0]);
+
+// Now recommendation_list contains the top recommended books for the user
