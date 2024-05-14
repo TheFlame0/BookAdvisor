@@ -10,7 +10,9 @@ import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
 import UserProfile from './pages/profile.jsx';
 import LogIn from './pages/LogIn.jsx';
-import {BrowserRouter as Router , Route , Routes} from "react-router-dom";
+import {BrowserRouter as Router , Route , Routes} from "react-router-dom";;
+// import chatBot from './pages/chatBot.jsx';
+
 // import SignUp from './pages/SignUp.jsx';
 
 // // Initialize Firebas
@@ -66,6 +68,7 @@ import {BrowserRouter as Router , Route , Routes} from "react-router-dom";
 // export default App;
 
 
+
 const App = () => {
   
   return (
@@ -89,10 +92,5 @@ const App = () => {
 }
 
 export default App;
-//<div className='Content'>
-//<Switch>
- // <Route path="/">
-   // <Page />
-  //</Route>
-//</Switch>
-// </div>
+
+

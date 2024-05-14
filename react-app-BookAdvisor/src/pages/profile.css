@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 body {
     margin: 0;
@@ -13,22 +13,42 @@ body {
 
 .main-profile {
     background-color: #004285;
-    height: 40vh;
+    height: 25vh;
     width: 100%;
-    position: relative; /* Add relative positioning to the main-profile container */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-end; /* Align to the bottom of the container */
+    position: relative;
+}
+
+.container-name-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text horizontally */
+    position: relative;
 }
 
 .imgProfile-container {
-    position: absolute; /* Use absolute positioning */
-    /* bottom: 0; */
     display: flex;
-    justify-content: center;
-    transform: translateX(50%);
+    flex-direction: column;
+    align-items: center; /* Center the image and text horizontally */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
 }
 
-.imgProfile-container img {
-    max-width: 40%;
+.imgProfile {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
     border: 7px solid #7b57b2;
-    border-radius: 100%;
+    border-radius: 50%; /* Ensures the image remains a circle */
     overflow: hidden;
+}
+
+.container-name-img p {
+    margin-top: 20px; /* Add some space between the image and the text */
+    padding: 0 10px; /* Add some padding for better text readability */
+    max-width: 90%; /* Ensure text doesn't go beyond container width */
+    word-wrap: break-word; /* Wrap long words to the next line */
 }

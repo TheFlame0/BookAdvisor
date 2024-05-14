@@ -14,7 +14,7 @@ body {
 nav {
   background-color: #003366;
   z-index: 10000;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
   /* padding-bottom: 10px; */
   position: sticky;
   top: 0;
@@ -51,7 +51,7 @@ nav p {
 @media (max-width: 500px) {
 
   nav {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
   }
   
 
