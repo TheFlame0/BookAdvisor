@@ -1,40 +1,98 @@
-// Define the initial genre list and user score list
-let genre_list = [/* list of all genres */];
-let user_score = Array(genre_list.length).fill(0);
+import React, { useState, useEffect } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from './firebase';
 
-// Function to update user score based on genres of books read by the user
-function update_user_score(userReadList) {
-    userReadList.forEach(book => {
-        let temp = book.genres(); // Assuming book.genres() returns an array of genres for the book
-        temp.forEach(genre => {
-            let index = genre_list.indexOf(genre);
-            if (index !== -1) {
-                user_score[index] += 1;
-            }
+const BookRecommendation = () => {
+  const genre_list = ['fiction', 'non-fiction', 'fantasy', 'science', 'history']; // Example genres
+
+  const [userReadList, setUserReadList] = useState([]);
+  const [bookList, setBookList] = useState([]);
+  const [userScore, setUserScore] = useState(Array(genre_list.length).fill(0));
+  const [recommendationList, setRecommendationList] = useState([]);
+
+  useEffect(() => {
+    // Fetch user read list from Firestore
+    const fetchUserReadList = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, 'userReadList'));
+        const userReadListData = querySnapshot.docs.map(doc => doc.data());
+        setUserReadList(userReadListData);
+      } catch (error) {
+        console.error('Error fetching user read list:', error);
+      }
+    };
+
+    // Fetch book list from Firestore
+    const fetchBookList = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, 'bookList'));
+        const bookListData = querySnapshot.docs.map(doc => doc.data());
+        setBookList(bookListData);
+      } catch (error) {
+        console.error('Error fetching book list:', error);
+      }
+    };
+
+    fetchUserReadList();
+    fetchBookList();
+  }, []);
+
+  useEffect(() => {
+    // Function to update user score
+    const updateUserScore = () => {
+      let newUserScore = Array(genre_list.length).fill(0);
+      userReadList.forEach(book => {
+        book.genres.forEach(genre => {
+          const index = genre_list.indexOf(genre);
+          if (index !== -1) {
+            newUserScore[index] += 1;
+          }
         });
-    });
-}
+      });
+      setUserScore(newUserScore);
+    };
 
-// Define the book list and user book dictionary (scores)
-let book_list = [/* list of all books, sorted alphabetically */];
-let user_book_dict = new Map();
+    if (userReadList.length > 0) {
+      updateUserScore();
+    }
+  }, [userReadList]);
 
-// Calculate the score for each book based on user preferences
-book_list.forEach(book => {
-    let book_score = 0;
-    book.genres().forEach(genre => {
-        let index = genre_list.indexOf(genre);
-        if (index !== -1) {
-            book_score += 1 * user_score[index];
-        }
-    });
-    user_book_dict.set(book, book_score);
-});
+  useEffect(() => {
+    // Function to calculate and update book scores
+    const updateBookScores = () => {
+      let userBookDict = new Map();
+      
+      bookList.forEach(book => {
+        let bookScore = 0;
+        book.genres.forEach(genre => {
+          const index = genre_list.indexOf(genre);
+          if (index !== -1) {
+            bookScore += 1 * userScore[index];
+          }
+        });
+        userBookDict.set(book, bookScore);
+      });
 
-// Sort the user book dictionary by scores in descending order
-let sorted_books = Array.from(user_book_dict.entries()).sort((a, b) => b[1] - a[1]);
+      let sortedBooks = Array.from(userBookDict.entries()).sort((a, b) => b[1] - a[1]);
+      let recommendations = sortedBooks.slice(0, 10).map(entry => entry[0]);
+      setRecommendationList(recommendations);
+    };
 
-// Create the recommendation list with top 5-10 items
-let recommendation_list = sorted_books.slice(0, 10).map(entry => entry[0]);
+    if (bookList.length > 0 && userScore.some(score => score > 0)) {
+      updateBookScores();
+    }
+  }, [userScore, bookList]);
 
-// Now recommendation_list contains the top recommended books for the user
+  return (
+    <div>
+      <h1>Recommended Books</h1>
+      <ul>
+        {recommendationList.map(book => (
+          <li key={book.id}>{book.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default BookRecommendation;
