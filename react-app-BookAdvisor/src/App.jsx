@@ -9,7 +9,7 @@ import Home from './pages/Home.jsx';
 import SearchP from './pages/SearchP.jsx';
 import SignUp from './pages/SignUp.jsx';
 import profile from './pages/profile.jsx';
-import log_in from './pages/LogIn.jsx'
+import log_in from './pages/LogIn.jsx';
 // import SignUp from './pages/SignUp.jsx';
 
 // // Initialize Firebas
