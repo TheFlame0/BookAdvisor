@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
-import { db } from './firebase';
+//import { db } from './firebase';
 
-const genre_list = ['Fiction', 'Mystery', 'Science Fiction', 'Fantasy', 'Non-Fiction'];
+const genre_list = ['Fiction', 'Mystery', 'Science Fiction', 'Fantasy', 'Non-Fiction', 'history'];
 
 const BookRecommendation = () => {
   const [userReadList, setUserReadList] = useState([]);
@@ -66,7 +66,7 @@ const BookRecommendation = () => {
       });
 
       const sortedBooks = Array.from(userBookDict.entries()).sort((a, b) => b[1] - a[1]);
-      const recommendations = sortedBooks.slice(0, 10).map(entry => entry[0]);
+      const recommendations = sortedBooks.slice(0, 3).map(entry => entry[0]); // Show only the first three books
       setRecommendationList(recommendations);
     };
 
@@ -88,3 +88,34 @@ const BookRecommendation = () => {
 };
 
 export default BookRecommendation;
+
+
+/*import React from 'react';
+
+const BookRecommendation = ({ bookList }) => {
+  // Generate three random indices to select books
+  const randomIndices = [];
+  while (randomIndices.length < 3) {
+    const randomIndex = Math.floor(Math.random() * bookList.length);
+    if (!randomIndices.includes(randomIndex)) {
+      randomIndices.push(randomIndex);
+    }
+  }
+
+  // Select three random books based on the generated indices
+  const randomBooks = randomIndices.map(index => bookList[index]);
+
+  return (
+    <div>
+      <h1>Recommended Books</h1>
+      <ul>
+        {randomBooks.map(book => (
+          <li key={book.id}>{book.title}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default BookRecommendation;
+*/
