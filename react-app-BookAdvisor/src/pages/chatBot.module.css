@@ -1,112 +1,111 @@
 .mensagens {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 20px;
-    background-color: #fdfdff;
-    border: 1px solid #e1e2ff;
-    box-sizing: border-box;
-    width: 308.6px;
-    height: 524.4px;
-    overflow-y: auto;
-  }
-  
-  .op {
-    align-self: stretch;
-    flex: 1;
-    position: relative;
-    letter-spacing: 0.14px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .avatar1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 64px;
-    background-color: #7879f1;
-    width: 28.2px;
-    height: 28.2px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .avatar {
-    position: absolute;
-    top: 454.92px;
-    left: 31.75px;
-    width: 28.2px;
-    height: 28.2px;
-    text-align: center;
-    font-family: Roboto;
-  }
-  
-  .chatMessage {
-    position: relative;
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    display: flex;
-    align-items: center;
-  }
-  
-  .chatText {
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .timestamp {
-    font-size: 10px;
-    color: #999;
-  }
-  
-  .envio {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .inputField {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .sendButton {
-    margin-left: 10px;
-    padding: 10px 20px;
-    background-color: #5d5fef;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .mensagensParent {
-    position: fixed;
-    height: 600px;
-    text-align: left;
-    font-size: 10px;
-    color: #fff;
-    font-family: 'Public Sans';
-    bottom: 0;
-    right: 350px;
-    z-index: 1000;
-  }
-  
-  .chatShow {
-    display: block;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: #fdfdff;
+  border: 1px solid #e1e2ff;
+  box-sizing: border-box;
+  width: 308.6px;
+  height: 524.4px;
+  overflow-y: auto;
+}
+
+.op {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 64px;
+  background-color: #7879f1;
+  width: 28.2px;
+  height: 28.2px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  position: absolute;
+  top: 454.92px;
+  left: 31.75px;
+  width: 28.2px;
+  height: 28.2px;
+  text-align: center;
+  font-family: Roboto;
+}
+
+.chatMessage {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+}
+
+.chatText {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.timestamp {
+  font-size: 10px;
+  color: #999;
+}
+
+.envio {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.inputField {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sendButton {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #5d5fef;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mensagensParent {
+  position: fixed;
+  height: 600px;
+  text-align: left;
+  font-size: 10px;
+  color: #fff;
+  font-family: 'Public Sans';
+  bottom: 0;
+  right: 350px;
+  z-index: 1000;
+}
+
+.chatShow {
+  display: block;
+}

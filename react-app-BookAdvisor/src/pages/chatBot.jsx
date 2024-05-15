@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './chatBot.module.css';
+import BookRecommendation from './BookRecommendation'; // Adjust the path if necessary
 
 const ChatBot = () => {
   const [messages, setMessages] = useState([]);
@@ -41,6 +42,7 @@ const ChatBot = () => {
           <button className={styles.sendButton} onClick={handleSendMessage}>Send</button>
         </div>
       </div>
+      <BookRecommendation />
     </div>
   );
 };
