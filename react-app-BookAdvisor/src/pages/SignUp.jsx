@@ -1,6 +1,4 @@
 import './SignUp.css';
-import Navbar from '../HomePage-Components/Navbar';
-import Footer from  '../HomePage-Components/Footer';
 import {ref, set } from "firebase/database";
 import database from '../fireBaseConfig';
 import { Link } from 'react-router-dom';
@@ -23,7 +21,6 @@ const SignUp = () => {
             return;
         }
 
-        // Form data to be sent
         const formData = {
             first_name: Fname,
             last_name: Lname,
@@ -32,7 +29,7 @@ const SignUp = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5173/signup', {
+            const response = await fetch('http://localhost:5174/api/users/SignUp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
