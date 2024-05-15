@@ -1,13 +1,20 @@
+import React, { useState } from 'react';
 import { FunctionComponent } from 'react';
 import styles from './chatBot.module.css';
 
 
 function chatBot () {
+    const [isVisible, setIsVisible] = useState(false);
 
-    
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
+    };
 
 
     return (
+        <div>
+            <button onClick={toggleVisibility}>Toggle Chat</button>
+            {isVisible &&(
         <div className={styles.mensagensParent}>
             <div id='chatShow' >
             <div className={styles.mensagens} />
@@ -97,9 +104,10 @@ function chatBot () {
 
             <div className={styles.ellipseParent}>
                 <div className={styles.groupItem} />
-                <img className={styles.image1Icon} alt="" src="./src/imgs/image 1.png" />
+                <button><img className={styles.image1Icon} alt="" src="./src/imgs/image 1.png" /></button>
             </div>
             
+        </div>)}
         </div>);
 };
 

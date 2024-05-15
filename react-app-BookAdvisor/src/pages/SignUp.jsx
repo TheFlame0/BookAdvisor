@@ -29,7 +29,7 @@ const SignUp = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5174/api/users/SignUp', {
+            const response = await fetch('/SignUp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -42,8 +42,7 @@ const SignUp = () => {
             }
 
             alert('Account created successfully!');
-            // Optionally, redirect to another page after successful signup
-            // window.location.href = '/dashboard';
+            
         } catch (error) {
             console.error('Error:', error);
             alert('Signup failed. Please try again.');
