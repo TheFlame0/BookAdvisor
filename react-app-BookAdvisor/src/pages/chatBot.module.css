@@ -1,15 +1,17 @@
 .mensagens {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     border-radius: 20px;
     background-color: #fdfdff;
     border: 1px solid #e1e2ff;
     box-sizing: border-box;
     width: 308.6px;
     height: 524.4px;
-}
-.op {
+    overflow-y: auto;
+  }
+  
+  .op {
     align-self: stretch;
     flex: 1;
     position: relative;
@@ -18,11 +20,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.avatar1 {
+  }
+  
+  .avatar1 {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     border-radius: 64px;
     background-color: #7879f1;
     width: 28.2px;
@@ -32,8 +35,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-.avatar {
+  }
+  
+  .avatar {
     position: absolute;
     top: 454.92px;
     left: 31.75px;
@@ -41,344 +45,68 @@
     height: 28.2px;
     text-align: center;
     font-family: Roboto;
-}
-.perfilChild {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 10px 10px 0px 0px;
-    background-color: #fff;
-    border: 1px solid #dfe0eb;
-    box-sizing: border-box;
-    width: 303.7px;
-    height: 41.2px;
-}
-.chatBot {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    display: inline-block;
-    width: 82.8px;
-    height: 7.8px;
-}
-.chatBotWrapper {
-    position: absolute;
-    top: 12.4px;
-    left: 51.1px;
-    width: 82.8px;
-    height: 7.8px;
-}
-.avatarIcon {
-    position: absolute;
-    top: 2.98px;
-    left: 3.97px;
-    border-radius: 64px;
-    width: 33.7px;
-    height: 33.7px;
-    overflow: hidden;
-    object-fit: cover;
-}
-.filledactioninfoIcon {
-    position: absolute;
-    top: 11.41px;
-    left: 280.79px;
-    width: 17.9px;
-    height: 18.4px;
-    overflow: hidden;
-}
-.perfil {
-    position: absolute;
-    top: 2.48px;
-    left: 2.48px;
-    width: 303.7px;
-    height: 41.2px;
-    font-size: 16px;
-    color: #000;
-}
-.envioChild {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+  }
+  
+  .chatMessage {
+    position: relative;
+    margin-bottom: 10px;
+    padding: 5px 10px;
     border-radius: 10px;
-    background-color: #fff;
-    border: 1px solid #a5a6f6;
-    box-sizing: border-box;
-    width: 295.9px;
-    height: 23.9px;
-}
-.fillededitorattachFileIcon {
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .chatText {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .timestamp {
+    font-size: 10px;
+    color: #999;
+  }
+  
+  .envio {
     position: absolute;
-    top: 2.51px;
-    left: 23.47px;
-    width: 10.1px;
-    height: 10.1px;
-    overflow: hidden;
-}
-.groupChild {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .inputField {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sendButton {
+    margin-left: 10px;
+    padding: 10px 20px;
     background-color: #5d5fef;
-    width: 16.8px;
-    height: 16.8px;
-}
-.filledcontentsendIcon {
-    position: absolute;
-    top: 3.35px;
-    left: 3.35px;
-    width: 10.1px;
-    height: 10.1px;
-    overflow: hidden;
-}
-.rectangleParent {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 16.8px;
-    height: 16.8px;
-}
-.fillednavigationcheckIcon {
-    position: absolute;
-    top: 2.51px;
-    left: 40.23px;
-    width: 10.1px;
-    height: 10.1px;
-    overflow: hidden;
-}
-.fillededitorattachFileParent {
-    position: absolute;
-    top: 4.19px;
-    left: 238.86px;
-    width: 50.3px;
-    height: 16.8px;
-}
-.digiteAMensagem {
-    position: absolute;
-    top: 9.22px;
-    left: 13.41px;
-    display: inline-block;
-    width: 75.4px;
-    height: 5.9px;
-}
-.envio {
-    position: absolute;
-    top: 486.67px;
-    left: 6.45px;
-    width: 295.9px;
-    height: 23.9px;
-    font-size: 12px;
-    color: #dbdbdb;
-}
-.vectorIcon {
-    position: absolute;
-    height: 0.76%;
-    width: 5.01%;
-    top: 78.88%;
-    right: 91.35%;
-    bottom: 20.36%;
-    left: 3.64%;
-    max-width: 100%;
-    overflow: hidden;
-    max-height: 100%;
-}
-.avatar2 {
-    position: absolute;
-    top: 7.63px;
-    left: 0px;
-    border-radius: 64px;
-    background-color: #7879f1;
-    width: 17.6px;
-    height: 17.6px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.pm {
-    position: absolute;
-    top: 39.33px;
-    left: 34.05px;
-    font-size: 10px;
-    font-family: 'Public Sans';
-    color: #333;
-    display: inline-block;
-    width: 31.1px;
-    height: 7px;
-}
-.chat1Child {
-    position: absolute;
-    top: 0px;
-    left: 34.05px;
-    border-radius: 10px;
-    background-color: #fff;
-    border: 1px solid #a5a6f6;
-    box-sizing: border-box;
-    width: 212.5px;
-    height: 33.5px;
-}
-.loremIpsumHas {
-    position: absolute;
-    top: 4.7px;
-    left: 41.09px;
-    font-size: 12px;
-    letter-spacing: 0.14px;
-    line-height: 20px;
-    color: #5d5fef;
-    display: flex;
-    align-items: center;
-    width: 199.6px;
-    height: 23.5px;
-}
-.chat1 {
-    position: absolute;
-    top: 56.55px;
-    left: 6.45px;
-    width: 246.6px;
-    height: 46.4px;
-    font-family: Roboto;
-}
-.chat11 {
-    position: absolute;
-    top: 262.12px;
-    left: 6.45px;
-    width: 246.6px;
-    height: 46.4px;
-    font-family: Roboto;
-}
-.chat12 {
-    position: absolute;
-    top: 161.41px;
-    left: 6.45px;
-    width: 246.6px;
-    height: 46.4px;
-    font-family: Roboto;
-}
-.chat13 {
-    position: absolute;
-    top: 366.98px;
-    left: 6.45px;
-    width: 246.6px;
-    height: 46.4px;
-    font-family: Roboto;
-}
-.avatarIcon1 {
-    position: absolute;
-    top: 4.8px;
-    left: 223.24px;
-    border-radius: 64px;
-    width: 22.3px;
-    height: 22.3px;
-    overflow: hidden;
-    object-fit: cover;
-}
-.pm4 {
-    position: absolute;
-    top: 38.02px;
-    left: 191.86px;
-    display: inline-block;
-    width: 23.2px;
-    height: 7.1px;
-}
-.chat2Child {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    border-radius: 10px;
-    background-color: #7879f1;
-    width: 215px;
-    height: 33.9px;
-}
-.loremIpsumHas4 {
-    position: absolute;
-    top: 4.75px;
-    left: 9.5px;
-    font-size: 12px;
-    letter-spacing: 0.14px;
-    line-height: 20px;
-    font-family: Roboto;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    width: 197.2px;
-    height: 23.8px;
-}
-.chat2 {
-    position: absolute;
-    top: 102.87px;
-    left: 58.54px;
-    width: 245.6px;
-    height: 45.1px;
-    font-size: 10px;
-    color: #333;
-}
-.chat21 {
-    position: absolute;
-    top: 308.44px;
-    left: 58.54px;
-    width: 245.6px;
-    height: 45.1px;
-    font-size: 10px;
-    color: #333;
-}
-.chat22 {
-    position: absolute;
-    top: 207.73px;
-    left: 58.54px;
-    width: 245.6px;
-    height: 45.1px;
-    font-size: 10px;
-    color: #333;
-}
-.chat23 {
-    position: absolute;
-    top: 413.3px;
-    left: 58.54px;
-    width: 245.6px;
-    height: 45.1px;
-    font-size: 10px;
-    color: #333;
-}
-.groupItem {
-    position: absolute;
-    top: 23.57px;
-    left: 20.91px;
-    border-radius: 50%;
-    background-color: #fffcfc;
-    width: 39.2px;
-    height: 39.2px;
-}
-.image1Icon {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 81.3px;
-    height: 81.3px;
-    object-fit: cover;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-}
-.ellipseParent {
-    position: absolute;
-    top: 510.48px;
-    left: 246.06px;
-    width: 81.3px;
-    height: 81.3px;
-}
-.mensagensParent {
+  }
+  
+  .mensagensParent {
     position: fixed;
     height: 600px;
     text-align: left;
     font-size: 10px;
     color: #fff;
     font-family: 'Public Sans';
-    bottom: 0px;
+    bottom: 0;
     right: 350px;
     z-index: 1000;
-}
-.chatShow {
-    display: none;
-    
-}
-
+  }
+  
+  .chatShow {
+    display: block;
+  }
+  
